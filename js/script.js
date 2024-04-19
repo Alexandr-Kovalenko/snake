@@ -4,7 +4,7 @@ const width = canvas.width;
 const height = canvas.height;
 const speed = 150;
 
-const blockSize = 10;
+const blockSize = 8;
 const widthInBlocks = width / blockSize;
 const heightInBlocks = height / blockSize;
 
