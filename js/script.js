@@ -158,7 +158,7 @@ function drawScore() {
 
 function gameOver() {
   clearInterval(intervalid);
-  ctx.font = "60px Courier";
+  ctx.font = "40px Courier";
   ctx.fillStyle = "Black";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -182,4 +182,20 @@ $("body").keydown(function (event) {
   if (newDirection !== undefined) {
     snake.setDirection(newDirection);
   }
+});
+
+$("#up").click(() => {
+  snake.setDirection("up");
+});
+
+$("#down").click(() => {
+  snake.setDirection("down");
+});
+
+$("#left").click(() => {
+  snake.setDirection("left");
+});
+
+$("#right").click(() => {
+  snake.setDirection("right");
 });
